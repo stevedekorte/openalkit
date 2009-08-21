@@ -21,10 +21,15 @@ Sample Code
   [source play];
 
 
+Buffer Caches
+=============
+
+ALSource newWithPath: caches and reuses the ALBuffer it creates for a file. 
+So a given sound file will only be loaded and decoded once per program run.
+
+
 Notes
 =====
-
-ALSource newWithPath: caches and reuses the ALBuffer it creates for a file. So a given sound file will only be loaded and decoded once per program run.
 
 Threw this together for a small iPhone game I was working on. 
 It seems to work, but is pretty basic. Patches appreciated.
