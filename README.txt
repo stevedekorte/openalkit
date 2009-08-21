@@ -24,7 +24,8 @@ Sample Code
 Notes
 =====
 
-Threw this together for a small iPhone game I was working on. It seems to work, but is pretty basic. Patches appreciated.
+Threw this together for a small iPhone game I was working on. 
+It seems to work, but is pretty basic. Patches appreciated.
 
 - Steve Dekorte
 steve@dekorte.com
