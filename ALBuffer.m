@@ -81,7 +81,6 @@ static NSMutableDictionary *bufferCache = 0x0;
 
 - (BOOL)loadPath:(NSString *)path
 {
-	//NSLog(@"loadPath: %@\n", path);
 	return [self loadURL:[NSURL fileURLWithPath:path]];
 }
 
@@ -186,9 +185,6 @@ Exit:
 	if (extRef) ExtAudioFileDispose(extRef);
 	return NO;
 }
-
-//alBufferi(alcBuffer, AL_FREQUENCY, iFreq);
-
 
 - (int)sampleRate
 {
