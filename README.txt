@@ -17,7 +17,7 @@ Sample Code
 ===========
 
   self.context = [ALContext defaultContext]; 
-  source = [ALSource newWithPath:pathToWavFile];
+  source = [ALSource newWithPath:pathToSoundFile]; // wav, caf, etc
   [source play];
 
 
