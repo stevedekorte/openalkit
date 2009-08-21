@@ -2,23 +2,6 @@
 
 @implementation ALState
 
-/*
-+ (float)dopplerFactor
-{
-	return alGetFloat(AL_DOPPLER_FACTOR);
-}
-
-+ (float)speedOfSound
-{
-	return alGetFloat(AL_SPEED_OF_SOUND);
-}
-
-+ (float)distanceModel
-{
-	return alGetFloat(AL_DISTANCE_MODEL);
-}
-*/
-
 + (NSString *)vendor
 {
 	return [NSString stringWithCString:alGetString(AL_VENDOR)]; 

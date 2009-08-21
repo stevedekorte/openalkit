@@ -218,5 +218,4 @@
 	return [self state] == AL_STOPPED;
 }
 
-
 @end
