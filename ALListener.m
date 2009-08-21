@@ -43,7 +43,7 @@
 
 - (void)setRotation:(ALfloat)radians
 {
-	float ori[] = {cos(radians + M_PI_2), sin(radians + M_PI_2), 0., 0., 0., 1.};
+	ALfloat ori[] = {cos(radians + M_PI_2), sin(radians + M_PI_2), 0., 0., 0., 1.};
 	[context makeCurrent];
 	alListenerfv(AL_ORIENTATION, ori);
 	[self checkError];
@@ -51,7 +51,28 @@
 
 - (ALfloat)rotation
 {
-	return 0;
+	ALfloat ori[6];
+	alGetListenerfv(AL_ORIENTATION, ori);
+	return (ALfloat)atan2((double)ori[1], (double)ori[0]);
+}
+
+- (void)setDirection:(ALpoint)d
+{
+	ALpoint p = [self position];
+	ALfloat ori[] = {d.x, d.y, d.z, p.x, p.y, p.z};
+	[context makeCurrent];
+	alListenerfv(AL_ORIENTATION, ori);
+	[self checkError];
+}
+
+- (ALpoint)direction
+{
+	ALpoint d;
+	ALfloat ori[6];
+	alGetListenerfv(AL_ORIENTATION, ori);
+	d.x = ori[0];
+	memcpy(&d, ori, sizeof(ALpoint));
+	return d;
 }
 
 @end

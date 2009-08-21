@@ -19,4 +19,7 @@
 - (void)setRotation:(ALfloat)radians;
 - (ALfloat)rotation;
 
+- (void)setDirection:(ALpoint)d;
+- (ALpoint)direction;
+
 @end
