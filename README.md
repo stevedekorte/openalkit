@@ -9,14 +9,14 @@ Dependencies
 
 * CoreAudio
 * AudioToolbox
-* AVFoundation
+* AVFoundation(iPhone)
 * OpenAL
 
 
 Sample Code
 ===========
 
-	self.context = [ALContext defaultContext]; 
+	self.context = [ALContext context]; 
 	source = [ALSource sourceWithPath:pathToSoundFile]; // wav, caf, etc
 	[source play];
 
