@@ -109,7 +109,7 @@ static NSMutableDictionary *bufferCache = 0x0;
 	err = ExtAudioFileGetProperty(extRef, kExtAudioFileProperty_FileDataFormat, &thePropertySize, &inFormat);
 	if (err) 
 	{ 
-		printf("ExtAudioFileGetProperty(kExtAudioFileProperty_FileDataFormat) FAILED, Error = %i\n", err); 
+		printf("ExtAudioFileGetProperty(kExtAudioFileProperty_FileDataFormat) FAILED, Error = %ld\n", (long)err); 
 		goto Exit; 
 	}
 	
@@ -171,7 +171,7 @@ static NSMutableDictionary *bufferCache = 0x0;
 			// failure
 			free(theData);
 			theData = NULL; // make sure to return NULL
-			printf("ExtAudioFileRead FAILED, Error = %i\n", err); 
+			printf("ExtAudioFileRead FAILED, Error = %ld\n", (long)err); 
 			goto Exit;
 		}	
 	}
