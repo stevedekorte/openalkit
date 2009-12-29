@@ -4,22 +4,22 @@
 
 + (NSString *)vendor
 {
-	return [NSString stringWithCString:alGetString(AL_VENDOR)]; 
+	return [NSString stringWithUTF8String:alGetString(AL_VENDOR)]; 
 }
 
 + (NSString *)version
 {
-	return [NSString stringWithCString:alGetString(AL_VERSION)]; 
+	return [NSString stringWithUTF8String:alGetString(AL_VERSION)]; 
 }
 
 + (NSString *)renderer
 {
-	return [NSString stringWithCString:alGetString(AL_RENDERER)]; 
+	return [NSString stringWithUTF8String:alGetString(AL_RENDERER)]; 
 }
 
 + (NSString *)extensions
 {
-	return [NSString stringWithCString:alGetString(AL_EXTENSIONS)]; 
+	return [NSString stringWithUTF8String:alGetString(AL_EXTENSIONS)]; 
 }
 
 + (void)setDistanceModel:(ALenum)v

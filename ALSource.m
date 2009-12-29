@@ -8,7 +8,7 @@
 
 @implementation ALSource
 
-+ newWithPath:(NSString *)path
++ (ALSource *)sourceWithPath:(NSString *)path
 {
 	ALSource *source = [[[ALSource alloc] init] autorelease];
 	[source setBuffer:[ALBuffer bufferFromCacheForPath:path]];
@@ -161,7 +161,8 @@
 - (BOOL)play
 {
 	alSourcePlay(alcSource);
-	if ([self checkError]) return NO;
+	if ([self checkError]) 
+		return NO;
 	return YES;
 }
 

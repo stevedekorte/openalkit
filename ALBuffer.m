@@ -1,5 +1,7 @@
 #import "ALBuffer.h"
+#if defined(TARGET_IPHONE_SIMULATOR) || defined(TARGET_OS_IPHONE)
 #import <AVFoundation/AVFoundation.h>
+#endif
 #import <AudioToolbox/AudioToolbox.h>
 #import <AudioToolbox/ExtendedAudioFile.h>
 
