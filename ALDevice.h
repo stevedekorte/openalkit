@@ -3,17 +3,19 @@
 
 #import "ALObject.h"
 
+@class ALContext;
+
 @interface ALDevice : ALObject
 {	
 	ALCdevice *alcDevice;
 }
 
-+ defaultDevice;
++ (ALDevice *)defaultDevice;
 
 - (void)openDefault;
 - (void)close;
 
 - (ALCdevice *)alcDevice;
-- newContext;
+- (ALContext *)newContext;
 
 @end

@@ -11,7 +11,7 @@
 @property (nonatomic, assign) NSData *data; 
 @property (nonatomic, assign) ALuint alcBuffer; 
 
-+ bufferFromCacheForPath:(NSString *)path;
++ (ALBuffer *)bufferFromCacheForPath:(NSString *)path;
 
 // ugly - move these load methods to AudioData object later
 - (BOOL)loadURL:(NSURL *)url; 

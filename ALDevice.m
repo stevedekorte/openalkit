@@ -2,7 +2,7 @@
 #import "ALContext.h"
 @implementation ALDevice
 
-+ defaultDevice
++ (ALDevice *)defaultDevice
 {
 	ALDevice *device = [[[ALDevice alloc] init] autorelease];
 	[device openDefault];
@@ -49,7 +49,7 @@
 	return alcDevice;
 }
 
-- newContext
+- (ALContext *)newContext
 {
 	ALContext *context = [[[ALContext alloc] init] autorelease];
 	[context setDevice:self];
