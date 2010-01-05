@@ -1,7 +1,7 @@
 
 About
 =====
-An Objective-C binding to OpenAL. 
+An BSD licensed Objective-C binding to OpenAL. 
 
 
 Dependencies
@@ -32,7 +32,7 @@ Notes
 =====
 
 Threw this together for a small iPhone game I was working on. 
-It seems to work, but is pretty basic. Patches appreciated.
+It's pretty basic but seems to work well. Patches appreciated.
 
 - Steve Dekorte
 steve@dekorte.com

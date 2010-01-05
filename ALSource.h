@@ -44,5 +44,4 @@
 - (BOOL)isPaused;
 - (BOOL)isStopped;
 
-
 @end
