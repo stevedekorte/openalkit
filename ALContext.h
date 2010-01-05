@@ -13,7 +13,7 @@
 	ALCcontext *alcContext;
 }
 
-+ defaultContext;
++ (ALContext *)context;
 
 @property (nonatomic, assign) ALDevice *device; 
 @property (nonatomic, assign) ALListener *listener; 

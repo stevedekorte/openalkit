@@ -19,7 +19,7 @@ static BOOL logsErrors;
 
 - (NSString *)stringForAlErrorCode:(ALenum)err
 {
-	return [NSString stringWithCString:alGetString(err)];
+	return [NSString stringWithUTF8String:alGetString(err)];
 }
 
 - (void)setError:(NSString *)e
@@ -43,10 +43,10 @@ static BOOL logsErrors;
 	if (errorCode != AL_NO_ERROR)
 	{
 		[self setError:[self stringForAlErrorCode:errorCode]];
-		return NO;
+		return YES;
 	}
 	
-	return YES;
+	return NO;
 }
 
 @end

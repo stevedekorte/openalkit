@@ -6,7 +6,7 @@
 @synthesize listener;
 //@synthesize sources;
 
-+ defaultContext
++ (ALContext *)context
 {
 	ALContext *c = [[[ALContext alloc] init] autorelease];
 	[c open];

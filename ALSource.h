@@ -10,7 +10,7 @@
 	ALBuffer *buffer;
 }
 
-+ newWithPath:(NSString *)path;
++ (ALSource *)sourceWithPath:(NSString *)path;
 
 - (void)setBuffer:(ALBuffer *)buffer;
 - (ALBuffer *)buffer;
