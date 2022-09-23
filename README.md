@@ -34,7 +34,4 @@ Notes
 Threw this together for a small iPhone game I was working on. 
 It seems to work, but is pretty basic. Patches appreciated.
 
- - Steve Dekorte
-steve@dekorte.com
-
-Some style & minor fixes by Jeremy Knope <jerome@buttered-cat.com>
+Some style & minor fixes were contributed by Jeremy Knope.
